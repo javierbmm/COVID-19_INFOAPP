@@ -25,6 +25,8 @@
     height: 355px;
     min-width: 340px;
     padding: 30px 30px 15px;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .articles-container:after {
@@ -63,4 +65,21 @@
 .arrow.right {
     right: 80px;
     transform: rotate(-45deg);
+}
+
+.article-title, .article-date, .article-type {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.article-title {
+    font-size: 24px;
+}
+
+.date-type {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin-top: auto;
 }
